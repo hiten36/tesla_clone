@@ -22,7 +22,7 @@ import tc12 from '../src/images/model_s/t12.jpeg';
 import Bta1 from './Blank-text-area1';
 
 function Model_s() {
-    Use_script('script/car_script.js');
+    Use_script('../src/scripts/car_script.js');
     return (
         <>
             <div id='tc1' className="bg">
