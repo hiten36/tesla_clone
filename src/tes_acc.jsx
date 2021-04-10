@@ -1,10 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Use_script from './Use_script';
+import {tes_acc_js} from './tes_acc1.js';
 
 function Tes_acc()
 {
-    Use_script('script/tes_acc.js');
+    setTimeout(() => {
+        tes_acc_js();
+    }, 800);
     return(
         <div className="contact_box">
             <h1>Sign In</h1>

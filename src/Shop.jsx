@@ -1,6 +1,5 @@
 import React from 'react';
 import Nav1 from './Nav1';
-import Use_script from './Use_script';
 import Slider from 'infinite-react-carousel';
 import p2 from '../src/images/shop/p2.jpg';
 import p3 from '../src/images/shop/p3.jpg';
@@ -20,9 +19,9 @@ import p16 from '../src/images/shop/p16.jpg';
 import p17 from '../src/images/shop/p17.jpg';
 import Sb1 from './shop-box1';
 import { NavLink } from 'react-router-dom';
+import {shop_js} from './shop';
 
 function Shop() {
-    Use_script('script/shop.js');
     const settings = {
         duration: 100,
         initialSlide: true,
@@ -30,6 +29,9 @@ function Shop() {
         slidesToShow: 3,
         centerMode: true
     };
+    setTimeout(() => {
+        shop_js();
+    }, 800);
     return (
         <>
             <Nav1 />

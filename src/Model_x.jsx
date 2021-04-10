@@ -4,7 +4,6 @@ import sp5 from '../src/images/model_s/p5.jpg';
 import mx6 from '../src/images/model_x/p6.jpg';
 import mx9 from '../src/images/model_x/p9.jpg';
 import Carousal from './Carousal';
-import Use_script from './Use_script';
 import p6 from '../src/images/model_s/p6.jpg'
 import p7 from '../src/images/model_s/p7.jpg'
 import model_s_p1 from '../src/images/model_s/modelS_p1.jpeg';
@@ -19,9 +18,12 @@ import mx15 from '../src/images/model_x/p15.jpg';
 import mx16 from '../src/images/model_x/p16.jpg';
 import mx19 from '../src/images/model_x/p19.jpg';
 import mx20 from '../src/images/model_x/p20.jpeg';
+import {model_x_js} from './model_x.js';
 
 function Model_x() {
-    Use_script('script/model_x.js');
+    setTimeout(() => {
+        model_x_js();
+    }, 800);
     return (
         <>
             <div id='mx1' className="bg">

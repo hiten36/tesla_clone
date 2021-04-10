@@ -3,10 +3,12 @@ import { NavLink } from 'react-router-dom';
 import p1 from '../src/images/logo/logo.png';
 import p2 from '../src/images/logo/menu.svg';
 import p3 from '../src/images/logo/close.svg';
-import Use_script from './Use_script';
+import {nav_js} from './nav.js';
 
 function Nav() {
-    Use_script('script/nav.js');
+    setTimeout(() => {
+        nav_js();
+    }, 1000);
     return (
         <>
             <nav id='main_nav' className="navbar">

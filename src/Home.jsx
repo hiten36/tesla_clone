@@ -1,10 +1,12 @@
 import React from 'react';
 import Basic from './Basic';
-import Use_script from './Use_script';
+import {home_js} from './home.js';
 
 function Home()
 {
-    Use_script('script/home.js');
+    setTimeout(() => {
+        home_js();
+    }, 1000);
     return(
         <>
             <Basic cn='centerbg' flag='true' ids="tc1" model='Model S' message2='CUSTOM ORDER' message3="EXISTING INVENTORY"/>

@@ -8,10 +8,12 @@ import my6 from '../src/images/model_y/p7.png';
 import my7 from '../src/images/model_y/p8.jpg';
 import Bottom_one from './Bottom_one';
 import Ist from './Image_side_text'
-import Use_script from './Use_script';
+import {model_y_js} from './model_y.js';
 
 function Model_Y() {
-    Use_script('script/model_y.js');
+    setTimeout(() => {
+        model_y_js();
+    }, 800);
     return (
         <>
             <div id="my1">

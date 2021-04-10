@@ -10,10 +10,12 @@ import Bta from './Blank-text-area';
 import Bta1 from './Blank-text-area1';
 import Ibt from './Image-bottom_text';
 import Bottom_one from './Bottom_one';
-import Use_script from './Use_script';
+import {roof_js} from './roof.js';
 
 function Roof() {
-    Use_script('script/roof.js');
+    setTimeout(() => {
+        roof_js();
+    }, 800);
     return (
         <>
             <div id="r1">
@@ -82,7 +84,7 @@ function Roof() {
                         <h3>The Installation</h3>
                         <p>Our simple design enables quick and efficient tile installation</p>
                     </div>
-                    <div id="sp16_i5" class="sp16_inner1">
+                    <div id="sp16_i5" className="sp16_inner1">
                         <div className="sp16_bor5"></div>
                         <h3>Power On</h3>
                         <p>Final cleanup is completed before system activation</p>

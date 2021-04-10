@@ -5,12 +5,13 @@ import pv2 from '../src/images/solar_panel/v2.mp4';
 import pn8 from '../src/images/solar_panel/p9.jpeg';
 import Bta from './Blank-text-area';
 import Bta1 from './Blank-text-area1';
-import Ibt from './Image-bottom_text';
 import Bottom_one from './Bottom_one';
-import Use_script from './Use_script';
+import {panel_js} from './panel.js';
 
 function Panel() {
-    Use_script('script/panel.js');
+    setTimeout(() => {
+        panel_js();
+    }, 1000);
     return (
         <>
             <div id="r1">

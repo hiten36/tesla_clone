@@ -1,12 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import p1 from '../src/images/logo/logo.png';
-import Use_script from './Use_script';
 import ss1 from '../src/images/shop/ss1.svg';
 import ss2 from '../src/images/shop/ss2.svg';
 
 function Nav1() {
-    Use_script('script/nav1.js');
     return (
         <>
         <div>

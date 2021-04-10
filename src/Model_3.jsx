@@ -7,10 +7,12 @@ import m37 from '../src/images/model_3/p7.jpg';
 import m38 from '../src/images/model_3/p8.jpg';
 import Bottom_one from './Bottom_one';
 import Ist from './Image_side_text'
-import Use_script from './Use_script';
+import {model_3_js} from './model_3.js';
 
 function Model_3() {
-    Use_script('script/model_3.js');
+    setTimeout(() => {
+        model_3_js();
+    }, 800);
     return (
         <>
             <div id="m31">

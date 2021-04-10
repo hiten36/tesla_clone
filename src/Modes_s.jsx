@@ -3,7 +3,6 @@ import sp3 from '../src/images/model_s/p3.jpg';
 import sp5 from '../src/images/model_s/p5.jpg';
 import sp6 from '../src/images/model_s/p6.jpg';
 import Carousal from './Carousal';
-import Use_script from './Use_script';
 import p6 from '../src/images/model_s/p6.jpg'
 import p7 from '../src/images/model_s/p7.jpg'
 import p8 from '../src/images/model_s/p8.jpg'
@@ -20,9 +19,12 @@ import Bottom_one from './Bottom_one';
 import tc11 from '../src/images/model_s/t11.jpeg';
 import tc12 from '../src/images/model_s/t12.jpeg';
 import Bta1 from './Blank-text-area1';
+import {model_s} from './car_script.js';
 
 function Model_s() {
-    Use_script('../src/scripts/car_script.js');
+    setTimeout(() => {
+        model_s();
+    }, 800);
     return (
         <>
             <div id='tc1' className="bg">
